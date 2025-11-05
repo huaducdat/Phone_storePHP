@@ -8,7 +8,7 @@ class Category
     }
     public function getAll()
     {
-        return $this->pdo->query("SELECT * FROM categories ORDER BY is DESC")->fetchAll(PDO::FETCH_ASSOC);
+        return $this->pdo->query("SELECT * FROM categories ORDER BY id DESC")->fetchAll(PDO::FETCH_ASSOC);
     }
     public function create($name)
     {
